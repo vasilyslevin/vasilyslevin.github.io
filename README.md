@@ -1,6 +1,6 @@
 # vasilyslevin.github.io
 
-Personal website for Vasily (Vas) S. Levin — J.D., LL.M. in Taxation, UF Levin College of Law.
+Personal website for Vasily (Vas) S. Levin, Esq., M.S., J.D., LL.M. in Taxation, UF Levin College of Law.
 
 Live site: [vasilyslevin.github.io](https://vasilyslevin.github.io)
 
@@ -10,11 +10,10 @@ Live site: [vasilyslevin.github.io](https://vasilyslevin.github.io)
 
 | Path | Description |
 |---|---|
-| `index.html` | About — background, credentials, interests, contact |
-| `about/resume.html` | Resume — education, legal experience, community service |
-| `handbooks/index.html` | Handbooks index |
-| `handbooks/bar-system.html` | Levin Bar System — MBE/MEE/MPRE reference |
-| `forsale/index.html` | For Sale — current listings |
+| `index.html` | About: background, credentials, interests, contact |
+| `about/resume.html` | Resume: education, legal experience, community service |
+| `handbooks/index.html` | Handbooks: index |
+| `forsale/index.html` | For Sale: current listings |
 
 ## Structure
 
