@@ -1,0 +1,196 @@
+/* === LEVIN SITE — style.css === */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --bg:           #fafaf8;
+  --surface:      #f2f1ee;
+  --border:       #1a1a1a;
+  --accent:       #00397a;
+  --accent-soft:  #dce8f5;
+  --warn:         #7a0000;
+  --warn-soft:    #fdf0f0;
+  --ok:           #1a5c2a;
+  --ok-soft:      #edf7ef;
+  --text:         #111;
+  --muted:        #555;
+  --max:          860px;
+  --font:         'EB Garamond', 'Palatino Linotype', Georgia, serif;
+  --mono:         'Fira Code', 'Courier New', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.65;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* NAV */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--bg);
+  border-bottom: 1.5px solid var(--border);
+  padding: 0.55rem 0;
+}
+nav ul {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex; gap: 1.6rem;
+  list-style: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+nav ul li a { color: var(--text); font-weight: 700; }
+nav ul li a:hover { color: var(--accent); text-decoration: none; }
+nav ul li a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+
+/* PAGE WRAPPER */
+main {
+  max-width: var(--max);
+  margin: 2.5rem auto;
+  padding: 0 1.2rem;
+}
+
+/* SECTION HEADERS */
+h2.section {
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  border-bottom: 1.5px solid var(--border);
+  padding-bottom: 3px;
+  margin: 2rem 0 0.6rem;
+}
+h3.sub {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1.2rem 0 0.3rem;
+}
+h4.subsub {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0.8rem 0 0.2rem;
+}
+
+/* COLORED BOXES */
+.keybox {
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  background: var(--surface);
+  padding: 10px 16px;
+  margin: 10px 0;
+}
+.exbox {
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  padding: 8px 16px;
+  margin: 10px 0;
+}
+.warnbox {
+  border: 1px solid var(--warn);
+  background: var(--warn-soft);
+  padding: 8px 16px;
+  margin: 10px 0;
+}
+.pracbox {
+  border: 1px solid var(--ok);
+  background: var(--ok-soft);
+  padding: 8px 16px;
+  margin: 10px 0;
+}
+
+/* FLEX ROW */
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.muted { color: var(--muted); font-size: 0.9rem; }
+
+/* TAGS */
+.tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin: 2px 2px 2px 0;
+  background: var(--surface);
+}
+
+/* CARD GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+.card {
+  border: 1.5px solid var(--border);
+  border-radius: 5px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.card img { width: 100%; height: 160px; object-fit: cover; display: block; }
+.card-body { padding: 12px 14px; }
+.card-body h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+.card-body .price { font-size: 1.05rem; color: var(--accent); font-weight: 700; }
+.badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 3px;
+  padding: 2px 8px;
+  margin-top: 6px;
+}
+.badge.active { background: var(--ok-soft); color: var(--ok); border: 1px solid var(--ok); }
+.badge.sold   { background: var(--surface); color: var(--muted); border: 1px solid var(--muted); }
+
+/* PAGE HEADER */
+.page-header {
+  border-bottom: 1.5px solid var(--border);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.4rem;
+}
+.page-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.page-header .subtitle { color: var(--muted); font-size: 0.95rem; font-style: italic; }
+
+/* TWO-COLUMN ABOUT */
+.about-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+.about-grid img { width: 160px; border-radius: 4px; border: 1.5px solid var(--border); }
+@media (max-width: 560px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-grid img { width: 120px; }
+}
+
+/* PRINT */
+@media print {
+  nav { display: none; }
+  body { background: #fff; font-size: 10.5pt; }
+  main { max-width: 100%; margin: 0; padding: 0; }
+  a { color: #000; }
+  .keybox, .exbox, .warnbox, .pracbox { break-inside: avoid; }
+}
