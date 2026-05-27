@@ -86,6 +86,23 @@ nav ul li a { color: var(--text); font-weight: 700; }
 nav ul li a:hover { color: var(--accent); text-decoration: none; }
 nav ul li a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
 
+/* THEME TOGGLE */
+[data-theme-toggle] {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+[data-theme-toggle]:hover { opacity: 1; }
+
 /* PAGE WRAPPER */
 main {
   max-width: var(--max);
