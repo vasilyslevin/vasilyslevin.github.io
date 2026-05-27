@@ -35,7 +35,7 @@
   --text-faint:   #666;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root:not([data-theme]) {
     --bg:           #000000;
     --surface:      #222226;
