@@ -72,10 +72,15 @@ nav {
   border-bottom: 1.5px solid var(--border);
   padding: 0.55rem 0;
 }
-nav ul {
+nav .nav-inner {
   max-width: var(--max);
   margin: 0 auto;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
   display: flex; gap: 1.6rem;
   list-style: none;
   font-size: 0.75rem;
@@ -84,7 +89,8 @@ nav ul {
 }
 nav ul li a { color: var(--text); font-weight: 700; }
 nav ul li a:hover { color: var(--accent); text-decoration: none; }
-nav ul li a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+nav ul li a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }nav ul li a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+
 
 /* THEME TOGGLE */
 [data-theme-toggle] {
