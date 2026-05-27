@@ -1,5 +1,5 @@
 /* === LEVIN SITE — style.css === */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Atkinson+Hyperlegible+Next:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
   --bg:           #fafaf8;
@@ -11,11 +11,45 @@
   --warn-soft:    #fdf0f0;
   --ok:           #1a5c2a;
   --ok-soft:      #edf7ef;
-  --text:         #111;
+  --text:         #28251d;
   --muted:        #555;
+  --text-faint:   #999;
   --max:          860px;
-  --font:         'EB Garamond', 'Palatino Linotype', Georgia, serif;
-  --mono:         'Fira Code', 'Courier New', monospace;
+  --font-body:    'Charter', 'Bitstream Charter', Georgia, serif;
+  --font-ui:      'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --mono:         'Courier Prime', 'Courier New', monospace;
+}
+
+[data-theme="dark"] {
+  --bg:           #000000;
+  --surface:      #222226;
+  --border:       #ccc;
+  --accent:       #6ba3e0;
+  --accent-soft:  #1a2a3a;
+  --warn:         #e07070;
+  --warn-soft:    #2a1a1a;
+  --ok:           #6abf7a;
+  --ok-soft:      #1a2a1e;
+  --text:         #e8e8e4;
+  --muted:        #bbb;
+  --text-faint:   #666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg:           #000000;
+    --surface:      #222226;
+    --border:       #ccc;
+    --accent:       #6ba3e0;
+    --accent-soft:  #1a2a3a;
+    --warn:         #e07070;
+    --warn-soft:    #2a1a1a;
+    --ok:           #6abf7a;
+    --ok-soft:      #1a2a1e;
+    --text:         #e8e8e4;
+    --muted:        #bbb;
+    --text-faint:   #666;
+  }
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
