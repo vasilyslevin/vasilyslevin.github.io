@@ -127,6 +127,21 @@ h4.subsub {
   background: var(--surface);
   padding: 10px 16px;
   margin: 10px 0;
+  overflow-x: auto;
+}
+.keybox-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.keybox-lines .kline {
+  white-space: nowrap;
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+.keybox-lines .kline strong {
+  display: block;
+  margin-bottom: 0.15rem;
 }
 .exbox {
   border: 1px solid var(--accent);
