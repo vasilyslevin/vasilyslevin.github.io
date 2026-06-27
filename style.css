@@ -16,8 +16,8 @@
   --text-faint:   #999;
   --max:          860px;
   --font-body:    'Charter', 'Century Schoolbook', serif;
-  --font-ui:      'Atkinson Hyperlegible Next', Arial, sans-serif;
-  --mono:         'Atkinson Hyperlegible Mono', 'Courier New', monospace;
+  --font-ui:      'Atkinson Hyperlegible Next', sans-serif;
+  --mono:         'Atkinson Hyperlegible Mono', monospace;
 }
 
 [data-theme="dark"] {
