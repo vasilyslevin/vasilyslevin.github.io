@@ -16,7 +16,7 @@
   --text-faint:   #999;
   --max:          860px;
   --font-body:    'Charter', 'Bitstream Charter', Georgia, serif;
-  --font-ui:      'Atkinson Hyperlegible Next', 'Helvetica Neue', Arial, sans-serif;
+  --font-ui:      'Atkinson Hyperlegible Next', Arial, sans-serif;
   --mono:         'Atkinson Hyperlegible Mono', 'Courier New', monospace;
 }
 
