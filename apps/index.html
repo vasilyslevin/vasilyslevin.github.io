@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps - Vasily S. Levin</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../assets/theme.js" defer></script>
+  <style>
+    .app-card { border: 1.5px solid var(--border); border-radius: 5px; background: var(--surface); padding: 14px 18px; margin-bottom: 1rem; }
+    .app-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .app-card p { font-size: 0.92rem; color: var(--muted); margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <ul>
+      <li><a href="../index.html">About</a></li>
+      <li><a href="../about/resume.html">Resume</a></li>
+      <li><a href="../handbooks/index.html">Handbooks</a></li>
+      <li><a href="index.html" class="active" aria-current="page">Apps</a></li>
+      <li><a href="../forsale/index.html">For Sale</a></li>
+      <li><a href="https://github.com/vasilyslevin" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <button data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+<main>
+  <div class="page-header">
+    <h1>Apps</h1>
+    <div class="subtitle">Document tools and workflow utilities by Vasily S. Levin</div>
+  </div>
+  <p>Explore the public projects below. Each link opens the project's GitHub repository for documentation and setup instructions.</p>
+  <h2 class="section">Available Apps</h2>
+  <div class="app-card">
+    <h3><a href="https://github.com/vasilyslevin/importapp" target="_blank" rel="noopener">Import App</a></h3>
+    <p>A document automation tool for replacing placeholders in Microsoft Word documents.</p>
+    <span class="tag">Word</span>
+    <span class="tag">Document Automation</span>
+    <span class="tag">Python</span>
+  </div>
+  <div class="app-card">
+    <h3><a href="https://github.com/vasilyslevin/source_doc_converter" target="_blank" rel="noopener">Source Document Converter</a></h3>
+    <p>A local-first desktop app for converting research papers, legal filings, and other source documents into searchable PDFs and AI-ready Markdown or JSON.</p>
+    <span class="tag">Document Conversion</span>
+    <span class="tag">Research</span>
+    <span class="tag">Local-First</span>
+    <span class="tag">AI Workflows</span>
+  </div>
+  <div class="app-card">
+    <h3><a href="https://github.com/vasilyslevin/onenote_replace" target="_blank" rel="noopener">OneNote Replace - Windows</a></h3>
+    <p>A local, source-auditable utility for finding and replacing text on the current Microsoft OneNote desktop page.</p>
+    <span class="tag">OneNote</span>
+    <span class="tag">Windows</span>
+    <span class="tag">Find and Replace</span>
+    <span class="tag">PowerShell</span>
+  </div>
+  <div class="app-card">
+    <h3><a href="https://github.com/vasilyslevin/onenote_replace_mac" target="_blank" rel="noopener">OneNote Replace - macOS</a></h3>
+    <p>A native macOS utility for previewing and replacing text in Microsoft OneNote pages using Microsoft Graph.</p>
+    <span class="tag">OneNote</span>
+    <span class="tag">macOS</span>
+    <span class="tag">Find and Replace</span>
+    <span class="tag">Microsoft Graph</span>
+  </div>
+</main>
+</body>
+</html>
